@@ -1,0 +1,80 @@
+/* 页面整体 */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* 列表容器 */
+.tactic-list {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 40px;
+
+  background: #020617;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 每一个战术 */
+.tactic-list li {
+  list-style: none;
+  padding: 14px 0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  cursor: pointer;
+  position: relative;
+}
+
+.tactic-list li:last-child {
+  border-bottom: none;
+}
+
+/* 棋子图标 */
+.tactic-list li::before {
+  content: "♞";
+  color: #22c55e;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+
+.tactic-name {
+  color: #e5e7eb;
+}
+.tactic-name:hover {
+  color: #aaff00;
+}
+
+/* Hover 效果 */
+.tactic-list li:hover {
+  
+  transform: translateX(6px);
+  transition: all 0.2s ease;
+}
+
+/* 描述文字 */
+.tactic-desc {
+  margin-top: 10px;
+  padding-left: 32px;
+
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cbd5f5;
+
+  animation: fadeSlideIn 0.35s ease forwards;
+}
+
+/* 出现动画 */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,173 @@
+
+.Intro {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: rgba(0, 188, 179, 0.742);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+#container {
+  color: #a5f407;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: 20px;        
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+
+    #flip {
+      height: 50px;
+      overflow: hidden;
+    }
+
+    #flip > div > div {
+      color: #fff;
+      padding: 4px 12px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: inline-block;
+    }
+
+    #flip div:first-child {
+      animation: show 5s linear infinite;
+    }
+
+    #flip div div {
+      background: #04ff8e;
+      border-radius: 3%;
+    }
+
+    #flip div:first-child div {
+      background: #4ec7f3;
+      border-radius: 3%;
+    }
+
+    #flip div:last-child div {
+      background: #DC143C;
+      border-radius: 3%;
+    }
+
+    @keyframes show {
+      0%   { margin-top: -270px; }
+      5%   { margin-top: -180px; }
+      33%  { margin-top: -180px; }
+      38%  { margin-top: -90px; }
+      66%  { margin-top: -90px; }
+      71%  { margin-top: 0px; }
+      99.99% { margin-top: 0px; }
+      100% { margin-top: -270px; }}
+.img{
+ display: block;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f172a;   /* 深色棋盘感 */
+  color: #e5e7eb;
+}
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  color: #ffffff;
+}
+
+.hero-img {
+  width: 380px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Intro Section */
+.intro {
+  padding: 60px 15%;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.intro p {
+  margin-bottom: 20px;
+}
+
+/* Action / Flip Section */
+.action {
+  padding: 60px 0;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Flip animation */
+#flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip > div > div {
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0c75e;
+  color: #111;
+  border-radius: 6px;
+}
+
+#flip div:first-child {
+  animation: show 6s linear infinite;
+}
+
+@keyframes show {
+  0% { margin-top: 0; }
+  33% { margin-top: -50px; }
+  66% { margin-top: -100px; }
+  100% { margin-top: 0; }
+}

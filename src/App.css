@@ -1,0 +1,33 @@
+.topnav {
+  width: 100%;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 12px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* navbar links */
+.topnav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* hover effect */
+.topnav a:hover {
+  background-color: #ffffff;
+  color: #1c03fb;
+}
+
+/* optional active style (manual use if needed) */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: #ffffff;
+}

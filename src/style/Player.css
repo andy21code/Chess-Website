@@ -1,0 +1,54 @@
+/* 页面整体标题 */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #a5f407;
+  letter-spacing: 1px;
+}
+
+/* 排行榜列表 */
+#Players {
+  max-width: 500px;
+  margin: 0 auto 80px;
+  padding: 30px 40px;
+
+  background: #020617;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* 每一位棋手 */
+#Players li {
+  font-size: 20px;
+  padding: 14px 0;
+  color: #0155fe;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+#Players li:last-child {
+  border-bottom: none;
+}
+
+/* 前三名高亮 */
+#Players li:nth-child(1) {
+  color: rgb(255, 224, 51);
+  font-weight: bold;
+}
+
+#Players li:nth-child(2) {
+  color: silver;
+}
+
+#Players li:nth-child(3) {
+  color: #cd7f32; /* 铜色 */
+}
+
+#Players li:hover {
+  color: #a5f407;
+  transform: translateX(8px);
+  transition: all 0.2s ease;
+}

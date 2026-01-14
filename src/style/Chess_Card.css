@@ -1,0 +1,114 @@
+/* 页面容器 */
+#contain {
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+  color: #e5e7eb;
+
+  /* 关键：不要 fixed，不要挡事件 */
+  position: relative;
+}
+
+/* 标题 */
+#contain h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #a5f407;
+}
+
+/* ===================== */
+/* 开局列表 */
+/* ===================== */
+
+.opening-list {
+  list-style: none;
+  padding: 30px 40px;
+  background: #020617;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  /* 列表在上层，但不挡棋盘 */
+  position: relative;
+  z-index: 2;
+}
+
+.opening-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  font-size: 18px;
+  text-align: left;
+}
+
+.opening-list li:last-child {
+  border-bottom: none;
+}
+
+/* 棋子图标 */
+.opening-list li::before {
+  content: "♜";
+  color: #22c55e;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+/* 名称 */
+.opening-name {
+  color: #e5e7eb;
+}
+
+/* Hover */
+.opening-list li:hover {
+  color: #a5f407;
+  transform: translateX(6px);
+  transition: all 0.2s ease;
+}
+
+/* ===================== */
+/* 展开内容 */
+/* ===================== */
+
+.opening-desc {
+  margin-top: 10px;
+  padding-left: 32px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cbd5f5;
+
+  animation: fadeSlideIn 0.35s ease forwards;
+}
+
+.opening-img {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin: 12px auto;
+
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 出现动画 */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.chess-page {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+
+  /* 关键：完全独立 */
+  position: relative;
+  z-index: 0;
+  pointer-events: auto;
+}
